@@ -40,6 +40,7 @@ sudo ldconfig # Refreshing the link library
 ```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
+git clone https://github.com/charif-tekbot/ros2_astra_camera.git
 ```
 
 ● Install libusb rules
