@@ -39,9 +39,9 @@ sudo ldconfig # Refreshing the link library
 
 ```bash
 mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
 ```
 
-● Extract and copy openNISDk_ROS2_xxx.tar.gz to ~/ros2_ws/src/
 ● Install libusb rules
 
 ```bash
@@ -63,7 +63,7 @@ Starting the camera
 ● In terminal 1
 
 ```bash
-source /opt/ros/galactic/setup.bash 
+source /opt/ros/humble/setup.bash 
 source ./install/setup.bash 
 ros2 launch astra_camera astra.launch.xml
 ```
@@ -71,7 +71,7 @@ ros2 launch astra_camera astra.launch.xml
 ● In terminal 2
 
 ```bash
-source /opt/ros/galactic/setup.bash 
+source /opt/ros/humble/setup.bash 
 source ./install/setup.bash 
 rviz2
 ```
@@ -79,7 +79,7 @@ rviz2
 ● List topics / services/ parameters (open a new terminal)
 
 ```bash
-source /opt/ros/galactic/setup.bash 
+source /opt/ros/humble/setup.bash 
 ros2 topic list
 ros2 service list 
 ros2 param list
